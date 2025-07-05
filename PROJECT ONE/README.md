@@ -1,0 +1,1 @@
+This lecture was just mainly theory and wrote my first ever code of html.
