@@ -1,0 +1,1 @@
+This lecture was good, I learned a lot of stuff about different types of tags and what they do and how to use them and how to wirte tags in a more faster manner.
