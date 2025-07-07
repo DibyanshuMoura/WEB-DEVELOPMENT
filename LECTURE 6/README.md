@@ -1,0 +1,1 @@
+In this lecture I learnt about emmets and how to write the code easily using emmets and div tag and difference between inline and block elements.
