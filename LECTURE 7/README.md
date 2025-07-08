@@ -1,0 +1,1 @@
+This lecture was pretty easy and I did all of the table myself and the homework question was easy too.
