@@ -1,0 +1,1 @@
+This lecture was easy but lengthy it covered a lot of topics.
