@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <label for="name">Name:</label>
+    <br/>
+    <br/>
+    <input type="text" id="name" placeholder="Enter your name">
+    <br/>
+    <label for="email">Email:</label>
+    <br/>
+    <br/>
+    <input type="email" id="email" placeholder="Enter email ID">
+    <br/>
+    <label for="phone">Phone:</label>
+    <br/>
+    <br/>
+    <input type="number" id="phone" placeholder="Enter mobile number">
+    <br/>
+    <label for="resume">Resume:</label>
+    <br/>
+    <br/>
+    <input type="file" id="resume">
+    <br/>
+    <br/>
+    <label for="experience">Experience(yrs):</label>
+    <br/>
+    <br/>
+    <input type="number" id="experience" min="0" max="50">
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" id="html">
+        <br/>
+        <label for="html">HTML</label>
+        <br/>
+        <br/>
+        <input type="checkbox" id="css">
+        <br/>
+        <label for="css">CSS</label>
+        <br/>
+        <br/>
+        <input type="checkbox" id="js">
+        <br/>
+        <label for="js">JavaScript</label>
+    </fieldset>
+    <br/>
+    <label for="education">Highest Education:</label>
+    <br/>
+    <br/>
+    <select id="education">
+        <option value="">Choose an Option</option>
+        <option id="high">High School</option>
+        <option id="inter">Inter School</option>
+        <option id="bachelors">Bachelors</option>
+        <option id="masters">Masters</option>
+    </select>
+    <br/>
+    <br/>
+    <label>Availability:</label>
+    <br/>
+    <br/>
+    <input type="radio" id="fulltime">
+    <br/>
+    <label for="fulltime">Full-Time</label>    
+    <br/>
+    <br/>
+    <input type="radio" id="partime">
+    <br/>
+    <label for="partime">Part-Time</label>
+    <br/>
+    <br/>
+    <label for="comments">Additional Comments:</label>
+    <br/>
+    <textarea id="comments" cols="45" rows="3" placeholder="Feedback"></textarea>
+    <input type="submit" value="Submit Application">
+</body>
+</html>
