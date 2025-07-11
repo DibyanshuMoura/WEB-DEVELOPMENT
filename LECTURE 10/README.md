@@ -1,0 +1,1 @@
+I have yet to do the homework website but I created the website in the video all my self except for the details and summary tab part. It was pretty easy but writing was the time taking part.
