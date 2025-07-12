@@ -1,0 +1,1 @@
+I wrote all the code myself and but idk compared to dsa this seems easy to me (idk maybe for now).
