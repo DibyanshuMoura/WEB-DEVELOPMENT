@@ -1,0 +1,1 @@
+This was the last lecture of the HTML series, I learned about meta tags, how to add css and js file and how to add favicon.
