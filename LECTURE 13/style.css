@@ -1,0 +1,29 @@
+h1{
+    font-size: smaller;
+    text-align: center;
+    color: red;
+}
+
+/* element styling */
+p{
+    color: brown;
+}
+
+/* id styling */
+#abc {
+    color: aqua;
+}
+
+/* class styling */
+.paraClass {
+    font-size: larger;
+}
+
+/* group styling */
+p, article {
+    width: 500px;
+}
+
+p.paraClass{
+    text-align: center;
+}

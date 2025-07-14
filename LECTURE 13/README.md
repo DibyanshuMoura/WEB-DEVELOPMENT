@@ -1,0 +1,1 @@
+This lecture was the starting of css and it was great, it was somewhat confusing that why so many ways to add the syling and the order of styling but I understood it clearly.
