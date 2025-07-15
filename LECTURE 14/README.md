@@ -1,0 +1,1 @@
+This lecture was easy as compared to other ones as it was just properties of styling element.
