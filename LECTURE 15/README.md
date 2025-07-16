@@ -1,0 +1,1 @@
+This lecture was easy as the boders, padding and margin stuff is simple.
