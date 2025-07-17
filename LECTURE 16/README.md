@@ -1,0 +1,1 @@
+This lecture was about the display property of the elements and inline, block and inline-block property of display.
