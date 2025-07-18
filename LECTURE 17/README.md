@@ -1,0 +1,1 @@
+This lecture was a bit confusing as the position property, display property and the top, bottom, left, right and the margin is causing a bit of confusion.
