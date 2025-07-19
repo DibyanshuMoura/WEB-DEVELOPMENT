@@ -1,0 +1,1 @@
+This lecture was very informative and I learnt a lot of new stuff and it was a bit confusing.
