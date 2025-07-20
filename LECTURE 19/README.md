@@ -1,0 +1,1 @@
+This lecture was easy as the topics were just float, clear and overflow.
