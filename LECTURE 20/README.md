@@ -1,0 +1,1 @@
+This lecture was a bit confusing to grasp the first time but after solving the questions in the website it really helped in understanding the concepts better.
