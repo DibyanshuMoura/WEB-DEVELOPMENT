@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            margin: 2px;
+            height: 200px;
+            padding: 10px;
+        }
+        #box1 {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+
+        #txt1 {
+            border: 1px solid black;
+        }
+
+        #txt2 {
+            border: 1px solid black;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+        }
+        @media (min-width: 640px){
+            .container {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 0px) and (max-width: 640px){
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div id="txt1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestias ad facilis est cumque. Dolorum laudantium esse a praesentium blanditiis consectetur modi, soluta officia magnam? Praesentium labore minus quaerat quis.
+            </div>
+            <div id="txt2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda id provident fugiat nostrum quas temporibus quod at esse hic tempore amet praesentium totam nisi architecto numquam vel ex excepturi, animi cum consequatur earum, iste minima? Rerum recusandae praesentium quidem tempora amet ipsa officia nemo unde voluptatum, libero nam ullam cupiditate dolor vel aut, aperiam, fuga ipsam dicta veniam reprehenderit perspiciatis.
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <img src="01.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

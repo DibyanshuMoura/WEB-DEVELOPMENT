@@ -1,0 +1,1 @@
+This lecture was a bit hard to grasp at first but I got it eventually and did all last part myself.
