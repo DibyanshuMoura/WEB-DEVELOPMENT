@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-colour: aquamarine;
+        }
+        .container {
+            border: 1px solid black;
+            background-color:beige;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            --primary-colour: aquamarine;
+            /* Custom Variable Created */
+            border: 1px solid black;
+            height: 330px;
+            margin: 10px;
+            width: 300px;
+            background-color: var(--primary-colour);
+            /* Custom Variable used */
+            padding: 20px;
+            box-shadow: inset -10px -15px 5px 2px grey;
+            /* The shadow comes inside the box  */
+            box-shadow: 10px 15px 5px 2px grey;
+            /* The shadow comes outside the box  */
+            box-shadow: 10px 15px 5px 2px red, -5px -10px 5px 2px black;
+            /* The multiple shadows of the box  */
+            text-shadow: 2px 2px 1px white;
+            text-shadow: white 2px 2px 1px ;
+            text-shadow: white 2px 2px;
+            text-shadow: 1px 1px;
+            text-shadow: 1px 1px red, -2px -2px yellow, 2px 2px blue;
+            /* Text shadow  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome to my learning Journey</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores, cupiditate repellat dolorum facilis ab vero inventore odit voluptatibus soluta iste, quo nemo provident mollitia maiores aut! Voluptatem doloribus cupiditate, voluptas dignissimos rem laboriosam cum ad itaque quam odio laborum velit modi! Consequatur ipsa amet rerum soluta perferendis ducimus aut.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

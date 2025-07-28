@@ -1,0 +1,1 @@
+This lecture was easy and I understood the concepts well.
