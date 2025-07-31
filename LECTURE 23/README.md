@@ -1,0 +1,1 @@
+This lecture was good and easy at the start but became more complex and time taking but I understood it well, there is some stuff that I have to revise of positions and stuff.
