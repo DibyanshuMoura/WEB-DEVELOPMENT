@@ -1,0 +1,1 @@
+This lecture was very short and was over really quick, it was easy to understand as the properties were quite similair to the animation.
