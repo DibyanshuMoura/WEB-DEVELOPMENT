@@ -1,0 +1,1 @@
+This lecture was easy as understanding the properties way easy and they were easy to use as compared to the keyframes and stuff.
