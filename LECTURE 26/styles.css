@@ -1,0 +1,68 @@
+#navList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 2.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.navContainer {
+    padding: 15px;
+    min-height: 80px;
+    width: 100vw;
+    background-size: 100% 100%;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#navLogo {
+    color: white;
+    font-size: 2.8rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#navLinks {
+    display: flex;
+    gap: 40px;
+}
+.footerBox {
+    width: 100%;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+    min-height: 40px;
+}
+.footerBox p {
+    color: white;
+    font-size: 2rem;
+}
+.contentBox {
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+}
+#itemOneList {
+    list-style-type: none;
+    width: 50%;
+}
