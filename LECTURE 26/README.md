@@ -1,0 +1,1 @@
+This was a completely different experience like how different things are from just learning and actually applying like I had to Chat GPT the last part of the code there was one thing in which I was stuck but its all good. 
