@@ -87,3 +87,6 @@ ul {
 ol {
     list-style-type: none;
 }
+img:hover {
+    box-shadow: 5px 5px 20px black;
+}
