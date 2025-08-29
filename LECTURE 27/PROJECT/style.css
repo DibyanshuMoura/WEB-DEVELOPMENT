@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(144, 188, 188, 0.725);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0.1px 0.1px 17px black;
+}
+.image1{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.heading {
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+}
+.summary {
+    font-weight: bold;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+.payment {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    background-color: rgba(154, 225, 236, 0.93);
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.image2 {
+    height: 70%;
+    width: 15%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.content {
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 2.3%;
+}
+.change {
+    margin-top: 6%;
+    margin-left: 20%;
+}
+.confirmPayment {
+    width: 80%;
+    height: 10%;
+    background-color: rgba(4, 11, 85, 0.601);
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.confirmPayment:hover {
+    box-shadow: 1px 1px 10px black;
+}
+.confirmPayment p {
+    color: white;
+    margin-top: 6%;
+    text-align: center;
+}
+.cancelOrder h3 {
+    text-align: center;
+    margin-top: 7%;
+}
+
