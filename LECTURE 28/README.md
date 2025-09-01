@@ -1,0 +1,1 @@
+This lecture was a bit odd to understand unlike flexbox the concepts are slight different but the terms are the same.

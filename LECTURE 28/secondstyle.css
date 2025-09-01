@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color:thistle;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(4, 200px);
+    gap: 0.5 rem;
+    padding: 4rem;
+}
+
+.items {
+    background-color: aquamarine;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
