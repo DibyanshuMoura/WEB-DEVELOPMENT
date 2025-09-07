@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 1.2fr 1.2fr;
+    gap: 1rem;
+    padding: 1.5%;
+    margin: auto;
+}
+
+.header {
+    margin-bottom: 2%;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.items {
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8 {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.items h4 {
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+.items p {
+    font-weight: 200;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.items .profile {
+    width: 90%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.items .profile img {
+    margin-top: 2%;
+    margin-left: 3%;
+    border-radius: 60px;
+    width: 15%;
+    height: 65%;
+}
+.profile {
+    display: flex;
+}
+
+.description h5 {
+    color: rgb(93, 95, 222);
+}
+
+.description h6 {
+    color: grey;
+}
+
+.description {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.category {
+    border-radius: 3px;
+    text-align: center;
+    font-size: smaller;
+    margin-left: 10%;
+    margin-top: 6%;
+    height: 40%;
+    width: 35%;
+    border: 1px solid rgb(90, 86, 86);
+}

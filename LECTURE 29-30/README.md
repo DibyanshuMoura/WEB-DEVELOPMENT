@@ -1,0 +1,1 @@
+This project was okay like i learned a lot from it, and it helped me to realize that theory is a lot different from practical knowledge.
