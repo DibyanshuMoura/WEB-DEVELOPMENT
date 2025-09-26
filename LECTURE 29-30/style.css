@@ -95,3 +95,36 @@ body {
     width: 35%;
     border: 1px solid rgb(90, 86, 86);
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .image1, .image2, .image3, .image4, 
+    .image5, .image6, .image7, .image8 {
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .image1, .image2, .image3, .image4, 
+    .image5, .image6, .image7, .image8 {
+        height: 120px;
+    }
+    .items h4 {
+        font-size: medium;
+        margin-left: 4%;
+    }
+    .items p {
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: small;
+    }
+}
