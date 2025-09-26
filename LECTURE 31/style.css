@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.items {
+    padding: 1rem;
+    border: 2px solid black;
+    background-color: rgb(113, 170, 198);
+}
+

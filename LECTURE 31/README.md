@@ -1,0 +1,1 @@
+This was lecture after a long time cause of exams and health but it was easy to understand.
