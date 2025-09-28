@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background: blue;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation: moveX 5s linear infinite , bounceY 1s ease-out infinite alternate;
+}
+
+@keyframes moveX {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes bounceY {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 50%;
+  }
+}

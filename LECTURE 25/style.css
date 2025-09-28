@@ -18,12 +18,12 @@
 }
 
 .box:hover {
-    /* transform: rotate(360deg); */
+    transform: rotate(320deg);
     /* transform: scale(2); */
     /* transform: scale(0.5); */
     /* transform: rotate(-360deg); */
     /* transform: skew(45deg); */
-    transform: translate(500px, 500px);
+    /* transform: translate(50px, 50px); */
 }
 p {
     font-size: 36px;
