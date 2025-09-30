@@ -1,0 +1,1 @@
+I was trying to copy the netfix webisite front but i got stuck at the background part like how to put the navbar on top of the background image and how to put a wrapper between the background image and the navbar, so I did only that and made all that responsive and now I will start javascript.
