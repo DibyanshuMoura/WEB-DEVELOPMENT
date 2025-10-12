@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercises</title>
+</head>
+<body>
+
+ <button onclick="
+    if (document.querySelector('button').innerText === 'Start'){
+      document.querySelector('button').innerHTML = 'loading';
+      setTimeout(finished, 1000);    
+    } else {
+      document.querySelector('button').innerHTML = 'Start';
+    }
+    ">
+    Start
+  </button>
+  <br>
+  <br>
+  <button onclick="
+  if (document.querySelector('p').innerHTML === 'Added'){
+    clearTimeout(timeoutID);
+    timeoutID = setTimeout(function (){document.querySelector('p').innerHTML = '';}, 2000);
+
+  }else {
+    document.querySelector('p').innerHTML = 'Added';
+    timeoutID = setTimeout(function (){document.querySelector('p').innerHTML = '';}, 2000);
+  }
+    
+    ">
+    Add to Cart
+  </button>
+  <p></p>
+  <script>
+    let add = function() {console.log(2 + 3);}
+    add();
+    add();
+
+    function runTwice(func) {
+      func();
+      func();
+    }
+    runTwice(function (){console.log('12b');})
+    runTwice(add);
+
+    function finished() {
+        let timeoutID;
+        document.querySelector('button').innerHTML = 'Finished';
+    }
+  </script>
+</body>
+</html>

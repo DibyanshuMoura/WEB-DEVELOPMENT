@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getLastValue(arr) {
+        return arr[arr.length - 1];
+      }
+
+      function swapFirstAndLast(arr) {
+        let temp = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[arr.length - 1] = temp;
+        return arr;
+      }
+      const nums = [10, 20, 30];
+      console.log(getLastValue(nums));
+      console.log(swapFirstAndLast(nums));
+
+      for (let i = 0; i <= 10; i += 2) {
+        console.log(i);
+      }
+
+      for (let i = 5; i >= 0; --i) {
+        console.log(i);
+      }
+
+      let arr1 = [1, 2, 4];
+      let arr2 = [];
+
+      for (let i = 0; i < arr1.length; ++i) {
+        arr2.push(++arr1[i]);
+      }
+
+      console.log(arr2);
+
+      let array = ["apple", "grape", "apple", "grape"];
+      function countWords(arr) {
+        let ob = {};
+        for (let i = 0; i < arr.length; ++i) {
+          if (ob[arr[i]])
+            ob[arr[i]] += 1;
+          else 
+            ob[arr[i]] = 1;
+        }
+        return ob;
+      }
+
+      console.log(countWords(array));
+    </script>
+  </body>
+</html>

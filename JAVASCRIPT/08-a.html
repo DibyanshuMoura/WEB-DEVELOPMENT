@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exercises</title>
+</head>
+<body>
+  <script>
+    /*
+    const basketball = {
+      price: 2095
+    };
+
+    console.log(basketball.price);
+    basketball.price += 500;
+    console.log(basketball.price);
+    
+    basketball['delivery-time'] = '3 days';
+    console.log(basketball);
+    */
+
+    const pr1 = {
+      name: 'basketball',
+      price: 1200
+    };
+
+    const pr2 = {
+      name: 'football',
+      price: 1500
+    };
+
+    function compareObjects (obj1, obj2) {
+      if (obj1.price > obj2.price)  
+        return obj2;
+      else  
+        return obj1;
+    }
+
+    const prLesser = compareObjects(pr1, pr2);
+    console.log(prLesser);
+
+    function isSameProduct (pr1, pr2) {
+      if (pr1.name === pr2.name && pr1.price == pr2.price)
+        return true;
+      return false;
+    }
+
+    console.log(isSameProduct(pr1, pr2));
+    
+    console.log('Good Morning'.toLowerCase());
+
+    console.log('test'.repeat(2));
+    
+  </script>
+</body>
+</html>

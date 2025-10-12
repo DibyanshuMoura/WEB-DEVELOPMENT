@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="STYLE/calculator-final.css">
+  <body>
+    <p class="calculatorOnScreen"></p>
+    <p>
+      <button class="buttonsCalc "onclick="
+        updateCalculation('1');
+        ">
+        1
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('2');
+      ">
+        2
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('3');      
+      ">
+        3
+      </button>
+
+      <button class="buttonsCalc yellow"onclick="
+        updateCalculation('+');
+      ">
+        +
+      </button>
+    </p>
+
+     <p>
+      <button class="buttonsCalc "onclick="
+        updateCalculation('4');
+        ">
+        4
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('5');
+      ">
+        5
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('6');      
+      ">
+        6
+      </button>
+
+      <button class="buttonsCalc yellow"onclick="
+        updateCalculation('-');
+      ">
+        -
+      </button>
+    </p>
+
+     <p>
+      <button class="buttonsCalc "onclick="
+        updateCalculation('7');
+        ">
+        7
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('8');
+      ">
+        8
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('9');
+      ">
+        9
+      </button>
+
+      <button class="buttonsCalc yellow"onclick="
+        updateCalculation('*');
+      ">
+        *
+      </button>
+    </p>
+
+     <p>
+      <button class="buttonsCalc "onclick="
+        updateCalculation('0');
+        ">
+        0
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        updateCalculation('.');
+      ">
+        .
+      </button>
+
+      <button class="buttonsCalc "onclick="
+        calculation = eval(calculation);
+        document.querySelector('.calculatorOnScreen').innerHTML = calculation;
+      ">
+        =
+      </button>
+
+      <button class="buttonsCalc yellow"onclick="
+        updateCalculation('/');
+      ">
+        /
+      </button>
+    </p>
+
+    <p>
+      <button class="buttonsCalc clear"onclick="
+          calculation = '';
+          localStorage.removeItem('calc');
+          document.querySelector('.calculatorOnScreen').innerHTML = calculation;
+        ">
+        Clear
+      </button>
+    </p>
+    
+    <script src="SCRIPT/calculator-final.js"></script>
+  </body>
+</html>

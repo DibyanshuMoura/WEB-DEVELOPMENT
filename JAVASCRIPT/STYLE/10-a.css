@@ -1,0 +1,34 @@
+.addToCart {
+  padding: 10px 45px;
+  background-color: rgb(225, 216, 20);
+  border: none;
+  font-size: large;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.uberButtons {
+  padding: 15px 25px;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.now {
+  background: black;
+  color: white;
+  margin-right: 20px;
+}
+.toggleButton {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.isToggled {
+  background-color: black;
+  color: white;
+}

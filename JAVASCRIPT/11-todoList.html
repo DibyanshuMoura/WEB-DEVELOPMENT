@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays and Loops</title>
+    <link rel="stylesheet" href="STYLE/11-todoList.css" />
+  </head>
+  <body>
+    <p>Todo List Pracise 1</p>
+    <input type="text" placeholder="Todo name" class="practiseOne" />
+    <button
+      onclick="
+        pushIntoTodo();
+      "
+    >
+      Add
+    </button>
+
+    <p>Todo List Practise 2</p>
+    <input type="text" placeholder="Todo name" class="practiseTwo" />
+    <button
+      onclick="
+        pushIntoTodoTwo();
+      "
+    >
+      Add
+    </button>
+    <div class="toDoPractiseTwoShow"></div>
+
+    <p>Final Todo List</p>
+    <div class="todoInputs">
+      <input type="text" class="finalTodoText" placeholder="Todo name" />
+      <input type="date" class="finalTodoDate" />
+      <button class="finalTodoSubmit"
+        onclick="
+      pushIntoTodoThree();
+      "
+      >
+        Add
+      </button>
+    </div>
+    <div class="finalTodoShow"></div>
+    <script src="SCRIPT/11-todoList.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="STYLE/10-rock-paper-scissors.css">
+  </head>
+  <body>
+    <p class="headingForGame">Rock Paper Scissors</p>
+
+    <button class= "buttonForGame"
+      onclick="
+      randMove = Math.random();
+      if (randMove <= 1/3) {
+        scoreCount.draw++;
+      }
+      else if (randMove > 1/3 && randMove <= 2/3){
+        scoreCount.loss++;
+      }
+      else{
+        scoreCount.win++;
+      }
+      document.querySelector('.scoreCount')
+        .innerHTML = `Wins: ${scoreCount.win}, Losses: ${scoreCount.loss}, Ties: ${scoreCount.draw}`;
+      localStorage.setItem('score', JSON.stringify(scoreCount));
+    "
+    >
+      <img src="	https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png" alt="">
+    </button>
+
+    <button class= "buttonForGame"
+      onclick="
+      randMove = Math.random();
+      if (randMove <= 1/3) {
+        scoreCount.win++;
+      }
+      else if (randMove > 1/3 && randMove <= 2/3){
+        scoreCount.draw++;
+      }
+      else{
+        scoreCount.loss++;
+      }
+      document.querySelector('.scoreCount')
+        .innerHTML = `Wins: ${scoreCount.win}, Losses: ${scoreCount.loss}, Ties: ${scoreCount.draw}`
+      localStorage.setItem('score', JSON.stringify(scoreCount));
+      "
+    >
+      <img src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png" alt="">
+    </button>
+
+    <button class= "buttonForGame"
+      onclick="
+    randMove = Math.random();
+    if (randMove <= 1/3) {
+      scoreCount.loss++;
+    }
+    else if (randMove > 1/3 && randMove <= 2/3){
+      scoreCount.win++;
+    }
+    else{
+      scoreCount.draw++;
+    }
+    document.querySelector('.scoreCount')
+        .innerHTML = `Wins: ${scoreCount.win}, Losses: ${scoreCount.loss}, Ties: ${scoreCount.draw}`
+    localStorage.setItem('score', JSON.stringify(scoreCount));
+    "
+    >
+      <img src="	https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png" alt="">
+    </button>
+    <br></br>
+    <br></br>
+    <p class="scoreCount"></p>
+    <button class="resetButton"
+      onclick="
+      scoreCount.win = 0;
+      scoreCount.loss = 0;
+      scoreCount.draw = 0;
+      localStorage.removeItem('score');
+      document.querySelector('.scoreCount')
+        .innerHTML = `Wins: 0, Losses: 0, Ties: 0`
+
+    "
+    >
+      Reset Score
+    </button>
+
+    <script src="SCRIPT/10-rock-paper-scissors.js"></script>
+  </body>
+</html>

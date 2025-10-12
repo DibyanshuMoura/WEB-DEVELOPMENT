@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+    Guess the Result
+  </p>
+
+  <button onclick="
+    result == 'heads' ? alert('You Won.') : alert('You Lose.');
+  ">
+    Heads
+  </button>
+
+  <button onclick="
+    result == 'tails' ? alert('You Won.') : alert('You Lose.');  
+  ">
+    Tails
+  </button>
+  <script>
+    let numRandom = Math.random();
+    let result;
+    let guess;
+    numRandom < 0.5 ? result = 'heads' : result = 'tails';
+  </script>
+</body>
+</html>

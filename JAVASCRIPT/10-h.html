@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <style>
+
+      body {
+        font-family: Arial;
+      }
+
+      .youtubeButton {
+        border: 2px solid black;
+        padding: 10px 15px;
+        color: white;
+        background-color: black;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .isSubscribed {
+        color: black;
+        background-color: rgb(240, 240, 240);
+      }
+
+      .orderCost, .calculateTotalButton {
+        padding: 10px;
+        font-size: medium;
+      }
+      
+      .calculateTotalButton {
+        padding: 12px;
+        background: green;
+        border: none;
+        color: white;
+      }
+
+      .resultOrder {
+        margin-bottom: 50px;
+      }
+
+      .redError {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button
+      class="youtubeButton"
+      onclick="
+    if (document.querySelector('.youtubeButton').innerText === 'Subscribe'){
+        document.querySelector('.youtubeButton').innerText = 'Subscribed';
+        document.querySelector('.youtubeButton').classList.add('isSubscribed');
+    }
+    else{
+      document.querySelector('.youtubeButton').innerHTML = 'Subscribe';
+      document.querySelector('.youtubeButton').classList.remove('isSubscribed');
+    }
+      
+  "
+    >
+      Subscribe
+    </button>
+
+    <br></br>
+
+    
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    
+    <input type="text" placeholder="Cost of order" class="orderCost"
+      onkeydown = "
+        if (event.key === 'Enter'){
+          calculateTotal();
+        }
+      "
+    >
+    <button class="calculateTotalButton"
+    onclick="
+      calculateTotal();
+    "
+    >
+      Calculate
+    </button>
+
+    <p class="resultOrder"></p> 
+
+
+    <p>Rock Paper Scissors</p>
+    <a href="10-rock-paper-scissors.html">Click here</a>
+
+    <script>
+      function calculateTotal() {
+        let cost;
+        cost = Number(document.querySelector('.orderCost').value);
+        cost *= 100;
+        if (cost < 0) {
+          document.querySelector('.resultOrder').classList.add('redError');
+          document.querySelector('.resultOrder').innerHTML = `Error: Cost cannot be less than $0.`;
+        }
+        else if (cost < 4000){
+          cost = cost + 1000; 
+          cost /= 100;
+          if (document.querySelector('.resultOrder').classList.contains('redError')){
+            document.querySelector('.resultOrder').classList.remove('redError');
+          }
+          document.querySelector('.resultOrder').innerHTML = `$${cost}`;
+        } else {
+          cost /= 100;
+          if (document.querySelector('.resultOrder').classList.contains('redError')){
+            document.querySelector('.resultOrder').classList.remove('redError');
+          }
+          document.querySelector('.resultOrder').innerHTML = `$${cost}`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercises</title>
+</head>
+<body>
+  <button class="buttona">9a</button>
+  <button class="buttonb">9b</button>
+  </br>
+  </br>
+  <button
+    onclick="
+      displayChoose('heads');
+    "
+  >heads
+  </button>
+
+  <button
+    onclick="
+      displayChoose('tails');  
+    "
+  >
+    tails
+  </button>
+  <p class="chooseOption"></p>
+
+  <input type="text" placeholder="Name" 
+    onkeydown="
+      eventChoose(event);  
+    "
+  >
+  <button
+    onclick="
+      displayName();
+    "
+  >Submit</button>
+  <p class="enterName"></p>
+  <script>
+      console.log(document.querySelector('.button'));
+      document.querySelector('.buttonb').innerHTML = '9b done!';
+      
+      function displayChoose (val) {
+        document.querySelector('.chooseOption').innerHTML = `You chose: ${val}`;
+      }
+
+      function displayName () {
+        const name = document.querySelector('input').value;
+        document.querySelector('.enterName').innerHTML = `Your name is ${name}`;
+      }
+
+      function eventChoose (event){
+        if (event.key === 'Enter'){
+        displayName();
+        }   
+      }
+  </script>
+</body>
+</html>

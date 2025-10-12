@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercises</title>
+</head>
+<body>
+  <script>
+    let arr = ['search', 'hello', 'sir', 'mam'];
+    function isSearchHere(arr, word) {
+      for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] === word){
+          return i;
+        }
+      }
+      return -1;
+    }
+    console.log(isSearchHere(arr, 'hello'));
+  </script>
+</body>
+</html>

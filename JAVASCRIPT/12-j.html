@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises</title>
+  </head>
+  <body>
+    <script>
+      const multiply = (a, b) => a * b;
+
+      console.log(multiply(2, 3));
+
+      function countPositive(nums) {
+        let count = 0;
+        nums.forEach((val) => {
+          if (val > 0) count++;
+        });
+        return count;
+      }
+
+      console.log(countPositive([1, 2, 34, -2, 2]));
+
+      function addNum(arr, num) {
+        return arr.map((val) => val + num);
+      }
+
+      console.log(addNum([1, 2, 3], 4));
+
+      function removeEggs(arr) {
+        let count = 1;
+        return arr.filter((val) => {
+          if (val === "egg" && count <= 2) {
+            count++;
+            return val != "egg";
+          }else return val;
+        });
+      }
+
+      console.log(removeEggs(["egg", "apple", "egg", "egg", "ham"]));
+
+      
+    </script>
+  </body>
+</html>

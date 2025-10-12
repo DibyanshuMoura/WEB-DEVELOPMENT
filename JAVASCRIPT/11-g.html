@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Messages</title>
+</head>
+<body>
+  <button
+    onclick="
+      count++;
+      titleDisplay();    
+    "
+  >
+    Add
+  </button>
+  <button
+    onclick="
+        count--;
+      if (count <= 0){
+        document.title = 'App';
+      }else titleDisplay();    
+    "  
+  >
+    Delete
+  </button>
+  <script>
+    function titleDisplay(){ 
+      document.title = `(${count}) New Messages`;
+    };
+    let count = 0;
+  </script>
+</body>
+</html>
