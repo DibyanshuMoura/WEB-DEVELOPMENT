@@ -1,4 +1,4 @@
-let productsHTML = '';
+let productsHTML = "";
 
 products.forEach((product) => {
   productsHTML += `
@@ -46,20 +46,35 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name="${product.name}">
+          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-id="${product.id}">
             Add to Cart
           </button>
-        </div>`
-    ;
+        </div>`;
 });
 
-document.querySelector('.js-products-grid').innerHTML = productsHTML;
+document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
-document.querySelectorAll('.js-add-to-cart')
-  .forEach((button) => {
-    button.addEventListener('click', () => {
-      console.log(button.dataset.productName);
-    })
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+  button.addEventListener("click", () => {
+    let matchingItem;
+    cart.forEach((item) => {
+      if (item.name === button.dataset.productId) {
+        matchingItem = item;
+      }
+    });
+    if (matchingItem) {
+      matchingItem.quantity++;
+    } else {
+      cart.push({
+        id: button.dataset.productId,
+        quantity: 1,
+      });
+    }
+    let totalQuantity = 0;
+
+    cart.forEach((cartItem) => {
+      totalQuantity += cartItem.quantity;
+    });
+    document.querySelector(".cart-quantity").innerHTML = totalQuantity;
   });
-
-  
+});
