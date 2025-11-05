@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Number guessing game</h1>
+      <p>Try and guess a random number between 1 and 100.</p>
+      <p>You have 10 attempts to guess the right number.</p>
+      <br />
+      <form class="form">
+        <label for="guessField" id="guess">Guess a number</label>
+        <input type="text" id="guessField" class="guessField" />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit guess"
+          class="guessSubmit"
+        />
+      </form>
+
+      <div class="resultParas">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const randomNumber = Math.floor(Math.random() * 100 + 1);
+    let preGuesses = [];
+    let currentGuessCount = 0;
+    let preGuessesAccum = "";
+    const submitButton = document.querySelector("form");
+    document.querySelector(".lowOrHi").innerHTML = "";
+    submitButton.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const currentGuess = parseInt(
+        document.querySelector(".guessField").value
+      );
+      preGuessesAccum = "";
+      preGuesses.push(currentGuess);
+      preGuesses.forEach((val) => {
+        preGuessesAccum += String(val);
+        preGuessesAccum += " ";
+      });
+      document.querySelector(".guessField").value = "";
+      if (currentGuess === randomNumber) {
+        document.querySelector(".lowOrHi").innerHTML = "You Guessed correct";
+        document.querySelector(".lastResult").innerHTML = `Guesses Remaining: ${
+          10 - currentGuessCount
+        }`;
+        document.querySelector(".guesses").innerHTML = `${preGuessesAccum}`;
+      } else if (currentGuess > randomNumber) {
+        document.querySelector(".lowOrHi").innerHTML = "High";
+        currentGuessCount++;
+        document.querySelector(".lastResult").innerHTML = `Guesses Remaining: ${
+          10 - currentGuessCount
+        }`;
+        document.querySelector(".guesses").innerHTML = `${preGuessesAccum}`;
+      } else {
+        document.querySelector(".lowOrHi").innerHTML = "Low";
+        currentGuessCount++;
+        document.querySelector(".lastResult").innerHTML = `Guesses Remaining: ${
+          10 - currentGuessCount
+        }`;
+        document.querySelector(".guesses").innerHTML = `${preGuessesAccum}`;
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIGITAL CLOCK</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        width: 100vw;
+        height: 100vh;
+      }
+      .timeContainer {
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .actualTime {
+        font-size: large;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-top: 10px;
+        text-align: center;
+        height: 40px;
+        width: 120px;
+        background-color: rgb(236, 165, 42);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timeContainer">
+      <div class="heading">YOUR LOCAL TIME</div>
+      <div class="actualTime"></div>
+    </div>
+  </body>
+  <script>
+    function getTime () {
+      document.querySelector('.actualTime').textContent = new Date().toLocaleTimeString();
+    }
+    setInterval(getTime, 1000);
+  </script>
+</html>

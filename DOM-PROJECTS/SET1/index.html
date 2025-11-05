@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colour Picker</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .mainContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+      width: 50%;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .heading {
+      text-align: center;
+    }
+
+    .coloursContainer {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      height: 70%;
+      width: 80%;
+    }
+    .color {
+      height: 40%;
+      width: 60%;
+      border: 1px solid black;
+      transition: all 0.2s linear;
+      cursor: pointer;
+    }
+    
+    .color:hover {
+      transform: scale(1.1);
+    }
+    .white {
+      background-color: white;
+    }
+
+    .black {
+      background-color: #7c7a7a;
+    }
+
+    .red {
+      background-color: rgb(182, 12, 12);
+    }
+
+    .blue {
+      background-color: rgb(48, 48, 239);
+    }
+  </style>
+</head>
+<body>
+  <div class="mainContainer">
+    <div class="heading">
+      <h1>Colour Scheme Switcher</h1>
+    </div>
+    <div class="coloursContainer">
+      <div class="color white" data-color="white"></div>
+      <div class="color black" data-color="#7c7a7a"></div>
+      <div class="color red" data-color="rgb(182, 12, 12)"></div>
+      <div class="color blue" data-color="rgb(48, 48, 239)"></div>
+    </div>
+  </div>
+</body>
+<script>
+  const colors = Array.from(document.querySelectorAll('.color'));
+  colors.forEach((val) => {
+    val.addEventListener('click', () => {
+      document.body.style.backgroundColor = val.dataset.color;
+    });
+  });
+</script>
+</html>
