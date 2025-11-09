@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AUTOMATIC BG COLOR CHANGE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      button {
+        padding: 10px;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Start should change the Background color every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const startButton = document.querySelector("#start");
+    const stopButton = document.querySelector("#stop");
+    let changeColor;
+    startButton.addEventListener("click", () => {
+      changeColor = setInterval(() => {
+        const r = Math.random() * 255 + 1;
+        const g = Math.random() * 255 + 1;
+        const b = Math.random() * 255 + 1;
+        const body = document.querySelector("body");
+        body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      }, 1000);
+    });
+
+    stopButton.addEventListener("click", () => {
+      clearInterval(changeColor);
+      changeColor = null;
+    });
+  </script>
+</html>

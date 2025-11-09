@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event KeyCodes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <div id="insert">
+        <div class="key">Press the key and watch magic</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const bodyElement = document.querySelector("body");
+    const keyELementShow = document.querySelector(".key");
+    bodyElement.addEventListener("keydown", (event) => {
+      keyELementShow.innerText = event.code === "Space" ? "Space" : event.key;
+    });
+  </script>
+</html>
