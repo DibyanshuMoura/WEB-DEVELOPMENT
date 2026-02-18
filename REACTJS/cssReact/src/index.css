@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+}

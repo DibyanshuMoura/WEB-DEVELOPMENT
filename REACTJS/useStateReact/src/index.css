@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: large;
+  font-weight: bold;
+}
+h2 {
+  background-color: #dadada;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 30px;
+  border: 1px solid black;
+}

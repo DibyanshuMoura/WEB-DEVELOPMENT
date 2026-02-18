@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/LECTURE 19/index.html"
+  "livePreview.defaultPreviewPath": "/LECTURE 19/index.html",
+  "liveServer.settings.port": 5501
 }
